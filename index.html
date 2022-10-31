@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task Manager</title>
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	
+<div class="date-heure-auj">
+	<div class="day"></div>
+	<div class="month"></div>
+	<div class="year"></div>
+</div>
+
+<h1 class="task-manager">🤩 Plan your Life 🤩 </h1>
+
+<h2>Create your task : </h2>	
+<form class="createTask">
+	<div >
+		<p>New task :</p>
+		<input type="text" class="new-task" required>
+	</div>
+	<div>
+		<p>Task description :</p>
+		<input type="text" class="description-task" required>
+	</div>	
+	<div>
+		<p>End date task :</p>
+		<input type="date" class="date-end-task"  required>
+	</div>
+	<div>
+		<p>State :</p>
+		<select class="state-task">
+			<option value="1">to do</option>
+			<option value="2">doing</option>
+			<option value="3">done</option>
+		</select>	
+	</div>
+	<div>
+		<button type="button" class="add-button">Add task !</button>
+	</div>
+</form>
+
+
+<h2>Task manager : </h2>
+<div class="tasks">
+<!--	
+	<div class="cart">
+		<h3>Task Name</h3>	
+		<p>Task description</p>
+		<p>Date restante</p>
+		<p>State</p>
+	</div>
+
+	<div class="cart">
+		<h3>Task Name</h3>	
+		<p>Task description</p>
+		<p>Date restante</p>
+		<p>State</p>
+	</div>	
+
+	<div class="cart">
+		<h3>Task Name</h3>	
+		<p>Task description</p>
+		<p>Date restante</p>
+		<p>State</p>
+	</div>	
+-->
+
+
+</div>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

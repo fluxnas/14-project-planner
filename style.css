@@ -1,0 +1,77 @@
+body {
+	margin: auto;
+	width: 100vw;
+	display:flex; 
+	flex-direction:column; 
+	align-items: center;
+	align-content: center;
+	text-justify:  center;
+    font-family: 'Roboto';
+  	font-size: 14px;
+  	background-image: url(./assets/background-image.jpg);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+
+}
+
+div {
+	margin-top: 10%;
+	margin-bottom: 10%;
+	display:flex; 
+	flex-direction:column; 
+	align-items: center;
+	align-content: center;
+}
+
+/* typo */
+form p {
+	margin:  auto;
+	font-weight: bold;
+}
+h2 {
+	margin-top: 5%;
+	color: white;
+}
+
+/* button */
+.add-button {
+	margin: auto;
+	padding: 5%;
+	border-radius: 2em;
+	background-color: skyblue;
+	color: white;
+}
+
+/* input */
+input {
+	padding: 5%;
+	border-radius: 2em;
+}
+
+/* cart tasks */
+
+div.cart {
+	margin: 2%;
+	width: 80vw;
+	padding: 2%;
+	border-radius: 2em;
+	border: 2px solid white;
+	background-color: skyblue;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
