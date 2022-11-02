@@ -4,13 +4,11 @@ body {
 	display:flex; 
 	flex-direction:column; 
 	align-items: center;
-	align-content: center;
 	text-justify:  center;
     font-family: 'Roboto';
   	font-size: 14px;
   	background-image: url(./assets/background-image.jpg);
   	background-size: cover;
-  	background-repeat: no-repeat;
 
 }
 

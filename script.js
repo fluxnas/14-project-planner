@@ -45,6 +45,7 @@ createTask.addEventListener("click", () => {
 	divCart.appendChild(cartTime)
 	let date = document.querySelector('input[type="date"]')
 	cartTime.innerHTML = "End date task : " + date.value
+	// console.log(date.value)
 
 // STATE
 	// creer element carName & relier a divCart
@@ -65,36 +66,36 @@ const cartDateCreation = document.createElement("p")
 divCart.appendChild(cartDateCreation)
 cartDateCreation.innerHTML = "Creation date of task : " + now
 
-
 const cartRemainTime = document.querySelector("p")
 divCart.appendChild(cartRemainTime)
 
-function refresh() {
 
-const tabDay = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
-day.textContent = tabDay[now.getDay()]
-const tabMonth = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
-month.textContent = tabMonth[now.getMonth()]
-year.textContent = now.getFullYear()
+function update(){
+		var later = new Date(date.value); // premier janvier 2013
+		var result = later.getTime() - now.getTime(); // différence en millisecondes depuis le premier janvier 1970 (voir getTime() pour mieux comprendre)
+
+		// const now = new Date()
+		// let date = document.querySelector('input[type="date"]')
+		// let result = document.querySelector('input[type="date"]').getTime() - now.getTime(); 
+ 
+		var jours=parseInt(result/86400000);
+		var hours=parseInt((result%86400000)/3600000);
+		var minutes=parseInt((result%3600000)/60000);
+		var secondes=parseInt((result%60000)/1000);
+		var dixiemes=parseInt((result%1000)/100);
+ 
+		cartRemainTime.innerHTML=jours+"jours "+hours+"h "+minutes+"mn "+secondes+":"+dixiemes;
+ 
+		setTimeout("update()", 100);
+	}
+update()
 
 
-}
 
 
 
-
-cartRemainTime.innerHTML = "Remain Time : "
 
 })
-
-
-
-
-
-
-
-
-
 
 
 
